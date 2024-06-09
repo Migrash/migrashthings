@@ -1,0 +1,137 @@
+body {
+  background: black;
+  color: #EADEDA;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 140%;
+  min-font-size: 40px;
+  margin: 0;
+  height: 100%;
+  overscroll-x: hidden;
+  overflow-x: hidden;
+}
+
+div {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.titlebg {
+  display: flex;
+  align-items: center;
+  background: black;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  padding: 2% 15px;
+  box-shadow: 0 2vh 3vh rgba(0, 0, 0, 0.5);
+}
+
+.pagetitle a {
+  max-width: 25%;
+}
+
+.pagetitle {
+  color: #EADEDA;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 96%;
+  display: flex;
+  align-items: center;
+  gap: 2.1%;
+}
+
+#SocialNetworks {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+#SocialNetworks img {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}
+
+.custom-heading {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 240%;
+  color: #EADEDA;
+  margin-top: 25%;
+  margin-bottom: 10%;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .custom-heading {
+    margin-top: 70%;
+    margin-bottom: 20%;
+  }
+  #SocialNetworks img {
+  height: 54px;
+  width: 54px;
+  }
+}
+
+.itemsbox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr)); /* По умолчанию 4 колонки */
+  gap: 2%;  
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень для объема */
+  width: 430px; /* Задать фиксированную ширину для .item */
+  margin: 0 auto;
+}
+
+.item img {
+  width: 100%; /* Изображение заполняет ширину контейнера */
+  max-width: 60vw; /* Ограничиваем максимальную ширину */
+  min-width: 1%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.price {
+    color: #EADEDA; /* Цвет текста цены */
+    margin-top: 2vh;
+}
+
+.orderButton {
+  background-color: #8A3033; /* Фон кнопки */
+  border-radius: 7px;
+  padding: 6px 24px;
+  color: #EADEDA;
+  text-decoration: none;
+  font-size: 1.5rem;
+  min-font-size: 22px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.orderButton:hover {
+    background-color: #823329; /* Изменение цвета при наведении */
+}
+
+.orderButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/*
+ЦВЕТОПАЛИТРА
+Для текста: #EADEDA
+Для обводки: #823329
+Для фона: #8A3033
+Для самого главного текста: #8A3033
+Для второстепенного текста: #823329
+*/
