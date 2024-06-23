@@ -5,7 +5,9 @@ body {
   font-size: 3vh;
   min-font-size: 40px;
   margin: 0;
+  margin-top: 4vh;
   height: 100%;
+  text-align: center;
   overscroll-x: hidden;
   overflow-x: hidden;
 }
